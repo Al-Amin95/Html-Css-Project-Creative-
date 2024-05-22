@@ -1,0 +1,786 @@
+/* =========================== Common CSS Start ================================ */
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+img {
+    vertical-align: middle;
+}
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    width: 1168px;
+    margin: 0 auto;
+}
+.pera_text {
+    width: 542px;
+    height: 55px;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+    color: hsla(0, 0%, 9%, 0.794);
+}
+/* -------section tittle css start------ */
+.section_tittle {
+    font-size: 40px;
+    font-weight: 700;
+    color: #181818;
+}
+.section_tittle p {
+    width: 542px;
+    height: 55px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27px;
+    color: hsla(0, 0%, 9%, 0.719);
+}
+.section_tittle h3 {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #181818;
+}
+/* -------section tittle css end------ */
+/* =========================== Common CSS End ================================ */
+
+/* ============================ Navbar CSS Start ============================= */
+#navbar .container .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#navbar .container .main .logo {
+    line-height: 100%;
+}
+
+/* ----------menu part start---------- */
+#navbar .container .main ul {
+    display: flex;
+}
+
+#navbar .container .main ul li {
+    margin: 0 26px;
+}
+
+#navbar .container .main .menu ul li a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #181818;
+    transition: 0.4s;
+}
+
+#navbar .container .main .menu ul li a:hover {
+    color: #5956E8;
+}
+/* ----------after-before of menu start ---------- */
+
+#navbar .container .main .menu a {
+    position: relative;
+    display: inline-block;
+    padding-left: 10px;
+    transition: top 0.3s, opacity 0.3s;
+}
+#navbar .container .main .menu a::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 0;
+    opacity: 0;
+    background: #5956E8;
+}
+#navbar .container .main .menu a:hover::after {
+    opacity: 1;
+    top: 30px;
+
+}
+/* ----------after-before of menu end ---------- */
+/* ---------menu part end---------- */
+
+
+/* --------buttton part start---------- */
+#navbar .container .main .button a {
+    width: 134px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding: 13px 24px;
+    background: #5956E8;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+#navbar .container .main .button a:hover {
+    color: #181818;
+}
+/* --------buttton part end ---------- */
+
+/* ============================ Navbar CSS End ============================= */
+
+
+
+
+
+/* =========================== Banner Part Start ================================ */
+#banner {
+    background: #5956E8;
+    margin: 20px 0;
+    padding: 180px;
+    /* margin-bottom: 100px; */
+}
+#banner .container .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* --------text div start------- */
+#banner .container .main .text {
+    width: 542px;
+}
+#banner .container .main .text h1 {
+    width: 501px;
+    font-size: 65px;
+    font-weight: 500;
+    line-height: 80px;
+    color: #FFFEFE;
+    margin: 25px 0;
+}
+
+#banner .container .main .text p {
+    color: #FFFFFF;
+    line-height: 27px;
+}
+
+#banner .container .main .text a {
+    width: 134px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #5956E8;
+    padding: 13px 22px;
+    margin-top: 43px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+#banner .container .main .text a:hover {
+    color: #FFFEFE;
+    background: #d1687d;
+}
+/* --------text div end------- */
+/* --------img div start------- */
+#banner .container .main .image {
+    width: 480px;
+    height: 534px;
+}
+/* --------img div end------- */
+/* =========================== Banner Part End ===================================  */
+
+/* =========================== Our Services Part Start =================================== */
+#Services {
+    padding: 100px 0;
+}
+#Services .container .section_tittle {
+    margin-bottom: 50px;
+}
+#Services .container .main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+#Services .container .main .item {
+    width: 24%;
+    margin-bottom: 30px;
+    border: 1px solid #E3E3E3;
+    padding: 43px 48px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+#Services .container .main .item:hover {
+
+    border-color: #5956E8;
+    box-shadow: -2px -1px 5px 1px rgba(0, 0, 0, 0.67);
+    -webkit-box-shadow: -2px -1px 5px 1px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: -2px -1px 5px 1px rgba(0, 0, 0, 0.67);
+}
+#Services .container .main .item h2 {
+    width: 163px;
+    height: 30px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #181818;
+    border: 3px solid;
+}
+
+#Services .container .main .item p {
+    width: 274px;
+    height: 109px;
+    font-size: 16px;
+    font-size: 400;
+    line-height: 27px;
+    color: #181818;
+    margin-top: 20px;
+}
+
+#Services .container .main .item i {
+    width: 71px;
+    height: 71px;
+    border: 1px solid #5956E8;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 71px;
+    font-size: 25px;
+    font-weight: 800;
+    transition: 0.4s;
+    color: #5956E8;
+    margin-bottom: 30px;
+}
+
+#Services .container .main .item:hover i {
+    color: #FFFFFF;
+    background: #5956E8;
+}
+/* =========================== Our Services Part End =================================== */
+
+/* =========================== Our Work Portfolio Part Start ============================ */
+#portfolio {
+    margin-bottom: 50px;
+}
+
+/* --------Section_cntroller Start------------ */
+#portfolio .container .controller {
+    width: 800px;
+    height: 71px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsla(241, 76%, 62%, 0.05);
+    padding: 23px 64px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+#portfolio .container .controller a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #181818;
+    transition: 0.4s;
+    position: relative;
+}
+#portfolio .container .controller a:hover {
+    color: #5956E8;
+}
+
+
+#portfolio .container .controller a::before {
+    position: absolute;
+    left: 0;
+    top: -5px;
+    content: " ";
+    width: 100%;
+    height: 3px;
+    background-color: #5956E8;
+    transform: scale(0);
+    transition: 0.4s;
+}
+#portfolio .container .controller a:hover:before {
+    transform: scale(1);
+}
+/* --------Section_cntroller Start------------  */
+
+/* --------------- portfolio item css start-------------- */
+#portfolio .container .main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#portfolio .container .main .item {
+    width: 22%;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s;
+}
+#portfolio .container .main .item img {
+    width: 100%;
+    display: block;
+}
+#portfolio .container .main .item .overlay {
+    background: #5956E8;
+    text-align: center;
+    position: absolute;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 15px;
+    width: 60%;
+    padding: 10px 30px;
+    opacity: 0;
+    transition: 0.4s;
+}
+#portfolio .container .main .item .overlay:hover {
+    opacity: 1;
+}
+#portfolio .container .main .item .overlay h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFEFE;
+    margin-bottom: 10px;
+}
+
+#portfolio .container .main .item .overlay a {
+    font-size: 16px;
+    color: #FFFEFE;
+}
+/* --------------- portfolio item css end-------------- */
+/* =========================== Our Work Portfolio Part End =================================== */
+
+
+/* ===========================Our Expert Team Member Part Start ================================= */
+#Team_Member {
+    margin-bottom: 100px;
+}
+#Team_Member .container .main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#Team_Member .container .main .employee {
+    width: 32%;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+#Team_Member .container .main .employee img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+#Team_Member .container .main .employee .overlay {
+    background: linear-gradient(to top, rgba(226, 66, 55, 0.6), rgba(255, 255, 255, 0.5));
+    text-align: center;
+    position: absolute;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 15px;
+    width: 60%;
+    padding: 10px 30px;
+    opacity: 1;
+    transition: 0.4s;
+    z-index: 2;
+}
+
+#Team_Member .container .main .employee .grandiant {
+    background: linear-gradient(to top, rgba(89, 86, 232, 0.6), rgba(255, 255, 255, 0.5));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.4s;
+    z-index: 0;
+}
+#Team_Member .container .main .employee:hover .grandiant {
+    opacity: 1;
+}
+#Team_Member .container .main .employee .overlay h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #181818;
+    margin-bottom: 10px;
+}
+#Team_Member .container .main .employee .overlay p {
+    font-size: 20px;
+    color: #FFFEFE;
+}
+/* -----------------slider point start --------------  */
+#Team_Member .container .main .slider {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#Team_Member .container .main .slider .slider1 {
+    height: 10px;
+    width: 10px;
+    background-color: #E6E6E6;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+#Team_Member .container .main .slider .slider1:nth-child(3) {
+    height: 10px;
+    width: 10px;
+    background-color: #FBBF25;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+/* -----------------slider point end -------------- */
+/* ===========================Our Expert Team Member Part End ================================== */
+
+/* =========================== Customer Experience Part Start ================================= */
+#Experience {
+    padding: 20px 0px;
+}
+
+#Experience .container .section_tittle {
+    width: 603px;
+    height: 171px;
+}
+
+#Experience .container .section_tittle h3 {
+    width: 100%;
+    height: 95px;
+    font-size: 40px;
+    font-weight: 800;
+    color: #181818;
+    text-align: start;
+}
+
+#Experience .container .section_tittle .pera_text {
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27px;
+    color: hsla(0, 0%, 9%, 0.739);
+    text-align: left;
+}
+
+
+#Experience .container .main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#Experience .container .main .Experience_item {
+    width: 30%;
+    height: 426px;
+    margin-bottom: 30px;
+    border: 2px solid #E6E6E6;
+    background-color: #FFFEFE;
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-left: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s;
+}
+
+#Experience .container .main .Experience_item:hover {
+    border: 2px solid #5956E8;
+    box-shadow: -2px -1px 5px 1px rgba(0, 0, 0, 0.67);
+    -webkit-box-shadow: -2px -1px 5px 1px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: -2px -1px 5px 1px rgba(0, 0, 0, 0.67);
+}
+
+#Experience .container .main .Experience_item img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+#Experience .container .main .Experience_item img:hover {
+    border: 3px solid #5956E8;
+}
+#Experience .container .main .Experience_item .Stars {
+    width: 274px;
+    height: 150px;
+}
+#Experience .container .main .Experience_item .Stars i {
+    color: #FBBF25;
+    margin: 0 auto;
+}
+
+#Experience .container .main .Experience_item .Stars .pera_text {
+    width: 100%;
+    height: 90%;
+    font-size: 16px;
+    font-size: 400;
+    line-height: 27px;
+    color: #181818;
+    margin-top: 20px;
+}
+
+#Experience .container .main .Experience_item .info {
+    width: 134px;
+    height: 55px;
+    margin-top: 20px;
+    position: relative;
+}
+#Experience .container .main .Experience_item .info h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #181818;
+    color: #5D5D5D;
+}
+#Experience .container .main .Experience_item .info p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #5D5D5D;
+}
+
+#Experience .container .main .Experience_item .quotes i {
+    font-size: 60px;
+    position: absolute;
+    padding-left: 70%;
+    bottom: 10px;
+    color: rgba(89, 86, 232, 0.116);
+
+}
+#Experience .container .main .Experience_item:hover .quotes i {
+    color: hsla(241, 76%, 62%, 0.727);
+}
+/* -----------------slider point start --------------  */
+#Experience .container .main .slider {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+#Experience .container .main .slider .slider1 {
+    height: 10px;
+    width: 10px;
+    background-color: #E6E6E6;
+    border-radius: 50%;
+    margin: 5px;
+}
+#Experience .container .main .slider .slider1:nth-child(3) {
+    height: 10px;
+    width: 10px;
+    background-color: #FBBF25;
+    border-radius: 50%;
+    margin: 5px;
+}
+/* -----------------slider point end -------------- */
+/* =========================== Customer Experience Part End =================================== */
+
+
+/* =========================== Our Letest News Part Start ================================= */
+#Letest_News .container .main {
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/* --------------items css----------- */
+
+#Letest_News .container .main .Letest_item {
+    width: 30%;
+    height: 490px;
+    margin-bottom: 30px;
+    border: 2px solid #5956E8;
+    background-color: hsla(0, 0%, 89%, 0.404);
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s;
+}
+
+
+#Letest_News .container .main .Letest_item:hover {
+   border: 3px solid #5956E8;
+   box-shadow: -2px -1px 5px 1px rgba(0, 0, 0, 0.67);
+   -webkit-box-shadow: -2px -1px 5px 1px rgba(0, 0, 0, 0.67);
+   -moz-box-shadow: -2px -1px 5px 1px rgba(0, 0, 0, 0.67);
+}
+
+/* -----------items image css------------- */
+#Letest_News .container .main .Letest_item img {
+
+    width: 332px;
+    height: 199px;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+/* ----------------latest_symbol div csss----------- */
+#Letest_News .container .main .Letest_item .latest_symbol a {
+    width: 88px;
+    height: 19px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #5D5D5D;
+    margin-left: 35px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+#Letest_News .container .main .Letest_item .latest_symbol i {
+
+    color: #5D5D5D;
+
+}
+/* ------------item h2 heading css------------ */
+#Letest_News .container .main .Letest_item h2 {
+    width: 271px;
+    height: 48px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #181818;
+    margin-left: 35px;
+    margin-bottom: 15px;
+}
+/* ------------item p heading css------------ */
+#Letest_News .container .main .Letest_item .pera_text {
+    width: 300px;
+    height: 81px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 27px;
+    color: #5D5D5D;
+    margin-left: 35px;
+    margin-bottom: 10px;
+    display: flex;
+}
+/* ----------------latest_learn div csss----------- */
+#Letest_News .container .main .Letest_item .latest_learn a {
+    width: 88px;
+    height: 19px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #5956E8;
+    margin-left: 35px;
+    margin-bottom: 45px;
+    text-transform: capitalize;
+    display: flex;
+}
+
+/* =========================== Our Letest News Part End ====================================  */
+
+
+
+
+
+
+/* =========================== Footer Part Start ========================================== */
+#Footer{
+    background:rgba(89, 86, 232, 0.101) ;  
+    height: 400px;
+    padding-top: 100px; 
+}
+
+#Footer .container .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Footer .container .main .footer_logo {
+    width: 300px;
+    height: 241px;
+}
+
+#Footer .container .main .footer_logo a img {
+    width: 115px;
+    height: 84px;
+}
+
+#Footer .container .main .footer_logo p {
+    width: 300px;
+    height: 81px;
+    line-height: 27px;
+    font-size: 16px; /* Added 'px' unit */
+    font-weight: 400;
+    color: #5D5D5D;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#Footer .container .main .footer_logo h1 {
+    line-height: 27px;
+    font-size: 30px; /* Added 'px' unit */
+    font-weight: 700;
+    color: #181818;
+    margin-bottom: 10px;
+}
+
+#Footer .container .main .footer_logo .icon {
+    padding: 0;
+}
+
+#Footer .container .main .footer_logo .icon li {
+    display: inline-block;
+    padding: 10px;
+}
+
+#Footer .container .main .footer_logo .icon li a i {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+
+}
+
+#Footer .container .main .footer_items {
+    width: 150px;
+    height: 241px;
+    margin-left: 90px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #5D5D5D;
+    font-weight: 400;
+}
+#Footer .container .main .footer_items h1 {
+    color: #181818;
+   
+}
+#Footer .container .main .footer_items li {
+    margin-top: 22px;
+    font-size: 16px;
+    width: 160px;
+    line-height: 15px;
+}
+
+
+
+
+/* ------logo and media---------- */
+
+
+/* =========================== Footer Part End ============================================  */
